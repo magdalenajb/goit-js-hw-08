@@ -25,6 +25,14 @@ if (storageValue !== null) {
   textarea.value = JSON.parse(storageValue).textarea;
 }
 
+
+
+
+
+
+
+
+
 form.addEventListener('submit', e => {
   e.preventDefault();
 
