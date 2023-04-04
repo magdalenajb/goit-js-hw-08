@@ -21,8 +21,9 @@ form.addEventListener(
 let storageValue = localStorage.getItem(LOCALSTORAGE_KEY);
 
 if (storageValue !== null) {
-  email.value = JSON.parse(storageValue).email;
-  textarea.value = JSON.parse(storageValue).textarea;
+  dataForm = { email: email.value, message: message.value };
+  let dataForm = JSON.parse(storageValue);
+  
 }
 
 
